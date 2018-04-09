@@ -1,7 +1,7 @@
 {
-  "name": "vue-demo",
+  "name": "vue-firebase-demo",
   "version": "1.0.0",
-  "description": "A Vue.js project",
+  "description": "A Vue.js project for employee manager",
   "author": "tatwd <leoking9641@hotmail.com>",
   "private": true,
   "scripts": {

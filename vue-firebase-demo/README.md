@@ -1,6 +1,6 @@
-# vue-demo
+# vue-firebase-demo
 
-> A Vue.js project
+> A Vue.js project for employee manager
 
 ## Build Setup
 
