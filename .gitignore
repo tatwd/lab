@@ -1,0 +1,6 @@
+#node modules dir
+node_modules/
+
+#bin and obj dir
+[Bb]in/
+[Oo]bj/
