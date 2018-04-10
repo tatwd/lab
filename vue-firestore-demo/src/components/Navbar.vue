@@ -4,10 +4,11 @@
       <div class="container">
         <router-link to="/" class="brand-logo">Employee Manager</router-link>
         <ul class="right">
-          <li><router-link to="/">Dashboard</router-link></li>
-          <li><router-link to="/login">Login</router-link></li>
-          <li><router-link to="/register">Register</router-link></li>
-          <li><button class="btn black" @click="logout">Logout</button></li>
+          <li v-if="isLoggedIn"><span class="email black-text">{{ currentUser }}</span></li>
+          <li v-if="isLoggedIn"><router-link to="/">Dashboard</router-link></li>
+          <li v-if="!isLoggedIn"><router-link to="/login">Login</router-link></li>
+          <li v-if="!isLoggedIn"><router-link to="/register">Register</router-link></li>
+          <li v-if="isLoggedIn"><button class="btn black" @click="logout">Logout</button></li>
         </ul>
       </div>
     </div>
@@ -25,15 +26,30 @@ export default {
       currentUser: false
     }
   },
+  created () {
+    if (firebase.auth().currentUser) {
+      this.isLoggedIn = true
+      this.currentUser = firebase.auth().currentUser.email
+    }
+  },
   methods: {
     logout () {
       firebase
         .auth()
         .signOut()
         .then(() => {
-          this.$router.push('/login')
+          console.log(this.$router)
+          this.$router.go({
+            path: this.$router.path
+          })
         })
     }
   }
 }
 </script>
+
+<style scoped>
+  .email {
+    padding-right: 10px;
+  }
+</style>
