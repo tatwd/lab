@@ -1,10 +1,10 @@
 <template>
-  <nav>
-    <div class="nav-wrapper green">
-      <div class="container">
-        <router-link to="/" class="brand-logo">Employee Manager</router-link>
-        <ul class="right">
-          <li v-if="isLoggedIn"><span class="email black-text">{{ currentUser }}</span></li>
+  <nav class="green">
+    <div class="container nav-wrapper">
+      <div class="">
+        <router-link to="/" class="brand-logo hide-on-small-only">Employee Manager</router-link>
+        <ul id="nav-mobile" class="right hide-on-med-and-down show-on-small">
+          <li v-if="isLoggedIn"><span class="email black-text truncate">{{ currentUser }}</span></li>
           <li v-if="isLoggedIn"><router-link to="/">Dashboard</router-link></li>
           <li v-if="!isLoggedIn"><router-link to="/login">Login</router-link></li>
           <li v-if="!isLoggedIn"><router-link to="/register">Register</router-link></li>
