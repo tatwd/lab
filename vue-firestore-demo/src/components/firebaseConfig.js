@@ -1,3 +1,4 @@
+// add your config
 export default {
   apiKey: "AIzaSyBG5c_jy6KtSZWGXbw3KDM0iesPYdRImo4",
   authDomain: "vuefs-prod-464d4.firebaseapp.com",

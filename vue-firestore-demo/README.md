@@ -1,4 +1,4 @@
-# vue-firebase-demo
+# vue-firestore-demo
 
 > A Vue.js project for employee manager
 
