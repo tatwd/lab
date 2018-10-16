@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1],{135:function(e,t,n){"use strict";n.r(t);var i=n(9),s=Object(i.a)({},function(){this.$createElement;this._self._c;return this._m(0)},[function(){var e=this.$createElement,t=this._self._c||e;return t("div",[t("h2",[this._v("注册")])])}],!1,null,null,null);s.options.__file="register.vue";t.default=s.exports}}]);
