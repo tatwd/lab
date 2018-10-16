@@ -1,8 +1,13 @@
 // https://github.com/declandewet/vue-meta
 
+const base = { 
+  href: '/lab'
+}
+
 const title = '.NET Core 社区 · 中国'
 
 const meta = [
+  
   { 
     charset: 'utf-8' 
   },
@@ -39,6 +44,7 @@ const script = [
 
 
 export default {
+  base,
   title,
   meta,
   link,
