@@ -1,7 +1,0 @@
-#node modules dir
-node_modules/
-.nuxt
-
-#bin and obj dir
-[Bb]in/
-[Oo]bj/
