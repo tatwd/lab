@@ -4,7 +4,7 @@
       <a class="navbar-brand" href="/">
         <span class="h4">
           { .NET Core } 社区
-          <img style="height: 32px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f1e8-1f1f3.png" alt="中国">
+          <img style="height: 32px" src="~/assets/cn.png" alt="中国">
         </span>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
